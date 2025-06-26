@@ -7,12 +7,14 @@ h1
     color:brown;
     font-weight: bold;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 h2
 {
     color:palevioletred;
     font-weight: bold; 
     font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 .domanda
 {
@@ -23,9 +25,20 @@ h2
 button
 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: #2c3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative; /* Necessario per usare translateY */
+    transform: translateY(-7px); /* Sposta il bottone di 10 pixel verso l'alto */
+}
+button:hover
+{
+    transform: scale(1.08);
 }
 #risultato
 {
+    text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
 }
