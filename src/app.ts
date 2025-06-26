@@ -52,3 +52,4 @@ for (let i = 0; i < risposteErr.length; i++) {
 }
 
 aggiornaRisultati();
+
