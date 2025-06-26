@@ -11,10 +11,10 @@ function aggiornaRisultati(): void {
     if (risposteDate === totDomande) {
         if (punteggio >= punteggioMin) {
             risultato.textContent = "Sei un ottimo mago! Hai superato il quiz con " + punteggio + "/10 punti";
-            risultato.style.color = "green #2ecc71";
+            risultato.style.color = "#2ecc71";
         } else {
             risultato.textContent = "Non hai superato il quiz, sei un babbano";
-            risultato.style.color = "red #ff0026";
+            risultato.style.color = "#ff0026";
         }
         risultato.style.display = "block";
     } else {
@@ -30,7 +30,7 @@ for (let i = 0; i < risposteOk.length; i++) {
         if (!button.disabled) { 
             punteggio++;
             risposteDate++;
-            button.style.backgroundColor = "green #2ecc71";
+            button.style.backgroundColor = "#2ecc71";
             
             aggiornaRisultati();
         }
@@ -44,7 +44,7 @@ for (let i = 0; i < risposteErr.length; i++) {
     button.addEventListener("click", function () {
         if (!button.disabled) { 
             risposteDate++;
-            button.style.backgroundColor ="red #ff0026";
+            button.style.backgroundColor ="#ff0026";
 
             aggiornaRisultati();
         }
